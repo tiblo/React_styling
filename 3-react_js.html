@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>리액트 JS</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script>
+    const root = document.getElementById("root");
+    const input = React.createElement("input", {
+        id: "iv"
+    });
+    const button = React.createElement("button", {
+        onClick: () => ckbtn()
+    }, "입력");
+    const div = React.createElement("div", null, [input, button]);
+    ReactDOM.render(div, root);
+
+    const iv = document.querySelector("#iv");
+    function ckbtn(){
+        alert("입력값 : " + iv.value);
+    }
+</script>
+</html>

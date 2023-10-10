@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>일반적인 HTML</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="iv"><button id="btn">입력</button>
+    </div>
+</body>
+<script>
+    const iv = document.querySelector("#iv");
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click",ckbtn);
+
+    function ckbtn(){
+        alert("입력값 : " + iv.value);
+    }
+</script>
+</html>
