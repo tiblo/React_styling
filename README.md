@@ -19,3 +19,4 @@ https://velog.io/@chori/React-%EA%B0%9C%EB%B0%9C%EC%A4%91-vsCode-%EB%94%94%EB%B2
     ]
 }
 ```
+터미널에서 먼저 npm start로 서버를 구동해야 함.
