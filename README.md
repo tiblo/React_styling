@@ -25,4 +25,4 @@ https://velog.io/@chori/React-%EA%B0%9C%EB%B0%9C%EC%A4%91-vsCode-%EB%94%94%EB%B2
 * Auto Rename Tag
 * Auto Close Tag
 * Reactjs code snippets
-  * rsc 로 함수형 컴포넌트 자동 생성
+  * rsc(React Stateless Component)로 함수형 컴포넌트 자동 생성
