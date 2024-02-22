@@ -6,11 +6,11 @@ SPA(Single Page Application)를 전제로 하는 라이브러리.<br>
 
 ## React Components Styling
 React Components Styling 방식
-### CSS(기존 방식)
-### SCSS
-### CSS Module
-### Styled-Components
-### React Bootstrap
+* CSS(기존 방식)
+* SCSS
+* CSS Module
+* Styled-Components
+* React Bootstrap
 
 # VScode에서 React 디버깅
 
