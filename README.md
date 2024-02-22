@@ -4,6 +4,14 @@ SPA(Single Page Application)를 전제로 하는 라이브러리.<br>
 기본적으로 모듈형 개발이기 때문에 생산성 또한 상당히 높은 라이브러리라서 현재 대세..(?)<br>
 전체 페이지를 분할하여 조합하는 방식. 분할된 조각을 컴포넌트(Component)라고 함.
 
+## React Components Styling
+React Components Styling 방식
+### CSS(기존 방식)
+### SCSS
+### CSS Module
+### Styled-Components
+### React Bootstrap
+
 # VScode에서 React 디버깅
 
 https://velog.io/@chori/React-%EA%B0%9C%EB%B0%9C%EC%A4%91-vsCode-%EB%94%94%EB%B2%84%EA%B9%85-%EB%B0%A9%EB%B2%95
