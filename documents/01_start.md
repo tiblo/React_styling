@@ -1,9 +1,15 @@
 # React 시작
 ## 개발 환경
 * Node.js (https://nodejs.org/en) - 권장 버전 설치
-* Yam (https://classic.yarnpkg.com/en/docs/install#windows-stable) - npm 대신 사용(안해도 됨)
 * VSCode (https://code.visualstudio.com/)
+* Yam (https://classic.yarnpkg.com/en/docs/install#windows-stable) - npm 대신 사용(안해도 됨)
 > yarn을 기준으로 작성
+
+yarn 설치
+```
+npm install --global yarn
+```
+> Yam 사이트의 install 참조
 
 ## 프로젝트 생성
 VSCode에 작업용 폴더를 열고 Terminal에 다음과 같이 입력한다.
