@@ -7,7 +7,7 @@
 
 yarn 설치
 ```
-npm install --global yarn
+npm install --g yarn
 ```
 > Yam 사이트의 install 참조
 
