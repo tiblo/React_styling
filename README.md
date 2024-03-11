@@ -4,6 +4,27 @@ SPA(Single Page Application)를 전제로 하는 라이브러리.<br>
 기본적으로 모듈형 개발이기 때문에 생산성 또한 상당히 높은 라이브러리라서 현재 대세..(?)<br>
 전체 페이지를 분할하여 조합하는 방식. 분할된 조각을 컴포넌트(Component)라고 함.
 
+## 개발환경 설정
+### Node.js 설치
+https://nodejs.org/en
+
+### Yarn 설치
+node 설치 후 VSCode 터미널에서 npm으로 설치
+```
+npm install -g yarn
+```
+
+### 설치 확인
+node 확인
+```
+node -v
+```
+
+yarn 확인
+```
+yarn -v
+```
+
 ## React Components Styling
 React Components Styling 방식
 * CSS(기존 방식)
