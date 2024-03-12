@@ -93,3 +93,9 @@ chcp 65001
 ![image](https://github.com/tiblo/React_edu/assets/34559256/70bcf883-99e9-4850-bb55-acb5943073fd)
 
 해결~
+
+## settings.json 여는 방법
+![image](https://github.com/tiblo/React_edu/assets/34559256/8560465f-08b3-4e21-bd32-dd3a553dca2e)
+
+``F1`` 누르고 위와 같이 타이핑하여 실행
+
