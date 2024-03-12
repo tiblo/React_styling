@@ -75,7 +75,7 @@ package.json의 내용을 확인하여 필요한 node_modules을 설치한다.
 ![image](https://github.com/tiblo/React_edu/assets/34559256/b0da1558-e0ee-48b0-9c72-cf364cc963e1)
 
 setting.json에 다음을 추가
-```json
+```
 {
     ...
     "[powershell]": {
