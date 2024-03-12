@@ -70,3 +70,26 @@ node_modules의 용량이 많기 때문에 제외하고 압축하여 옮기게 �
 > npm install
 ```
 package.json의 내용을 확인하여 필요한 node_modules을 설치한다.
+
+# 터미널에 글자가 깨지는 경우 해결법
+![image](https://github.com/tiblo/React_edu/assets/34559256/b0da1558-e0ee-48b0-9c72-cf364cc963e1)
+
+setting.json에 다음을 추가
+```json
+{
+    ...
+    "[powershell]": {
+        "files.encoding": "utf8bom",
+        "files.autoGuessEncoding": true
+    }
+}
+```
+
+안되면(안된다..) 다음 코드를 터미널에서 실행
+```
+chcp 65001
+```
+
+![image](https://github.com/tiblo/React_edu/assets/34559256/70bcf883-99e9-4850-bb55-acb5943073fd)
+
+해결~
