@@ -89,7 +89,7 @@ function Component(){
 ```
 
 ### JavaScript 표현식 활용
-return문 위쪽에 작성한 javascript 변수나 함수는 ``{`` ``}``로 감싸서 활용할 수 있다.
+return문 위쪽에 작성한 javascript 변수나 함수, 연산식은 ``{`` ``}``로 감싸서 활용할 수 있다.
 ```javascript
 function Component() {
   const n = "홍길동";
@@ -102,7 +102,7 @@ function Component() {
 }
 ```
 
-### 조건 연산자(``? :``)
+### 조건 연산자(``(condition)? A : B``)
 Jsx 내에서는 if, switch 구문을 사용할 수 없다. 대신에 조건 연산자를 사용하여 분기를 처리한다.
 ```javascript
 function Component() {
@@ -116,6 +116,48 @@ function Component() {
 }
 ```
 
+### 반복
+Jsx 내에서는 loop(for, while) 구문을 사용할 수 없다. 대신 map 함수를 사용하여 반복을 처리한다.
+```javascript
+function Component() {
+  const menus = ["아메리카노","카페라떼","카페모카","에스프레소"];
 
+  return (
+    <>
+      {menus.map(menu => (<il>{menu}</li>))}
+    </>
+  );
+}
+```
 
+### className
+Jsx에서는 element의 class 속성을 사용할 때 className을 사용한다. className은 HTML로 변환되면 class로 처리된다.
+```javascript
+function Component() {
+  return (
+    <>
+      <div className="contents">...</div>
+    </>
+  );
+}
+```
+
+### Style Properties
+Jsx내에서의 css는 Object 형태로 작성되기 때문에 kebab case로 작성할 수 없다. 
+
+``background-color``와 같은 property는 ``backgroundColor``와 같은 camel case로 작성하여야 한다.
+
+```javascript
+function Component() {
+	const style = {
+		backgroundColor: 'red',
+		color: 'white'
+	}
+	return (
+    <>
+		  <div style={style}>Box</div>
+    </>
+	);
+}
+```
 
