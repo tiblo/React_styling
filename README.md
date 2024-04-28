@@ -27,7 +27,7 @@ React는 DOM을 바로 제어하지 않고 Virtual DOM을 생성하여 변경 �
 React는 DOM에 바로 변경 사항을 처리하지 않고 복제본인 Virtual DOM에 먼저 반영하여 기존 DOM과 비교를 통해 변경할 부분을 최소화함으로써 소요 시간을 줄인다.
 
 ![image](https://github.com/tiblo/React_edu/assets/34559256/2cf6fb96-0084-4b76-a1d3-6aa434c9e541)
-[출처 : React-동작-원리](https://velog.io/@leitmotif/React-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+[이미지출처 : React-동작-원리](https://velog.io/@leitmotif/React-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
 
 ## 개발환경 설정
 ### Node.js 설치
