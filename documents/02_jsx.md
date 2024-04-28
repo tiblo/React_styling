@@ -147,5 +147,17 @@ Jsx내에서의 css는 Object 형태로 작성되기 때문에 kebab case로 작
 
 ``background-color``와 같은 property는 ``backgroundColor``와 같은 camel case로 작성하여야 한다.
 
-
+```javascript
+function Component() {
+  const style = {
+    backgroundColor: 'red',
+    color: 'white'
+  }
+  return (
+    <>
+      <div style={style}>Box</div>
+    </>
+  );
+}
+```
 
