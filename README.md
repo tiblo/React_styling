@@ -93,6 +93,8 @@ chcp 65001
 - chcp : CHange Code Page. cmd(커멘드 창)에서의 글자 코드를 변경하는 명령어.
 - 65001 : utf-8 문자셋의 코드번호.
 
+> 이렇게 해도 다시 문자가 깨질 수도 있는데, 그런 경우 registry를 편집해야 함
+
 ![image](https://github.com/tiblo/React_edu/assets/34559256/70bcf883-99e9-4850-bb55-acb5943073fd)
 
 해결~
