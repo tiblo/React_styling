@@ -4,10 +4,10 @@
     <title>바닐라 JS</title>
 </head>
 <body>
-    <div id="wrap"></div>
+    <div id="root"></div>
 </body>
 <script>
-    const wrap = document.querySelector("#wrap");
+    const root = document.querySelector("#root");
     
     const inputTag = document.createElement("input");
     inputTag.setAttribute("type", "text");
@@ -16,7 +16,7 @@
     const btnTag = document.createElement("button");
     const btnText = document.createTextNode("입력");
     btnTag.appendChild(btnText);
-    wrap.appendChild(btnTag);
+    root.appendChild(btnTag);
     
     btnTag.addEventListener("click",ckbtn);
     
