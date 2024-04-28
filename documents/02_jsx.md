@@ -161,3 +161,15 @@ function Component() {
 }
 ```
 
+### 주석
+Jsx 내에서 ``{/*…*/}`` 와 같은 형식을 사용.
+```javascript
+function Component() {
+  return (
+    <>
+      {/* 이건 주석입니다. */}
+      <div>Box</div>
+    </>
+  );
+}
+```
