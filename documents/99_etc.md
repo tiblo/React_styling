@@ -29,3 +29,5 @@ CDN 방식으로 라이브러리를 불러오거나, 파일서버와 웹서버�
 Cross-Site Request Forgery
 
 한 서버에서 운영되는 형태. 허용된 권한을 중간에 가로채서 위조된 내용을 전송하거나 서버를 공격하는 방식. 보안 토큰을 주고받아서 예방하는 방식으로 해결.
+
+![image](https://github.com/tiblo/React_edu/assets/34559256/fced97c3-4f88-4328-9e3a-2e15a148bbfb)
