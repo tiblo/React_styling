@@ -154,9 +154,9 @@ function Component() {
 		color: 'white'
 	}
 	return (
-    <>
-		  <div style={style}>Box</div>
-    </>
+		<>
+			<div style={style}>Box</div>
+		</>
 	);
 }
 ```
