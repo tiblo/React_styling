@@ -9,6 +9,7 @@ React 문법으로 작성된 element는 가독성이 떨어지기 때문에 주�
 
 형태가 HTML과 유사하기 때문에 가독성이 높지만, 완전히 HTML과 동일하지는 않아서 몇가지 유의해야 할 부분이 있다.
 
+## Jsx 문법과 React 문법 비교
 Jsx의 div element
 ```javascript
 function Component(){
@@ -24,3 +25,42 @@ function Component(){
   return React.createElement("div", null, "Box");
 }
 ```
+
+## Syntax
+### 하나의 태그로 작성
+Jsx의 여러 element를 반환할 수 없다. 즉, 하나의 element만 작성해야 하며 여러 elements를 작성할 경우 하나의 부모 element로 감싸야 한다.
+
+```javascript
+function Component(){
+  return (
+    <input></input>
+    <button><button>
+  );
+}
+```
+위와 같이 작성하면 에러가 발생한다. 다음과 같이 작성해야 한다.
+
+```javascript
+function Component(){
+  return (
+    <div>
+      <input></input>
+      <button><button>
+    </div>
+  );
+}
+```
+
+``<div>``와 같은 특정 태그를 사용하고 싶지 않을 경우 ``<> </>``를 사용할 수 있다.(``<Fragment> </Fragment>``도 사용)
+```javascript
+function Component(){
+  return (
+    <>
+      <input></input>
+      <button><button>
+    </>
+  );
+}
+```
+
+
