@@ -63,7 +63,7 @@ function Component(){
 }
 ```
 
-### 종료태그를 사용
+### 종료태그 사용
 Jsx는 반드시 시작태그와 종료태그 쌍으로 element를 작성해야 한다. 
 
 예를 들어 html의 ``<input>``태그는 종료태그를 사용하지 않는 태그지만, ``</input>``이 붙어야 한다.
@@ -87,6 +87,35 @@ function Component(){
   );
 }
 ```
+
+### JavaScript 표현식 활용
+return문 위쪽에 작성한 javascript 변수나 함수는 ``{`` ``}``로 감싸서 활용할 수 있다.
+```javascript
+function Component() {
+  const n = "홍길동";
+
+  return (
+    <>
+      <h1>{n}</h1>
+    </>
+  );
+}
+```
+
+### 조건 연산자(``? :``)
+Jsx 내에서는 if, switch 구문을 사용할 수 없다. 대신에 조건 연산자를 사용하여 분기를 처리한다.
+```javascript
+function Component() {
+  const score = 90;
+
+  return (
+    <>
+      {score >= 60 ? <p>합격!</p> : <p>불합격!</p>}
+    </>
+  );
+}
+```
+
 
 
 
