@@ -90,6 +90,9 @@ setting.json에 다음을 추가
 chcp 65001
 ```
 
+- chcp : CHange Code Page. cmd(커멘드 창)에서의 글자 코드를 변경하는 명령어.
+- 65001 : utf-8 문자셋의 코드번호.
+
 ![image](https://github.com/tiblo/React_edu/assets/34559256/70bcf883-99e9-4850-bb55-acb5943073fd)
 
 해결~
