@@ -63,4 +63,30 @@ function Component(){
 }
 ```
 
+### 종료태그를 사용
+Jsx는 반드시 시작태그와 종료태그 쌍으로 element를 작성해야 한다. 
+
+예를 들어 html의 ``<input>``태그는 종료태그를 사용하지 않는 태그지만, ``</input>``이 붙어야 한다.
+```javascript
+function Component(){
+  return (
+    <div>
+      <input type="text" name="data1"></input>
+    </div>
+  );
+}
+```
+
+또는 self close할 수도 있음.(주로 사용되는 형태)
+```javascript
+function Component(){
+  return (
+    <div>
+      <input type="text" name="data1" />
+    </div>
+  );
+}
+```
+
+
 
