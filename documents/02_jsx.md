@@ -51,7 +51,7 @@ function Component(){
 }
 ```
 
-``<div>``와 같은 특정 태그를 사용하고 싶지 않을 경우 ``<> </>``를 사용할 수 있다.(``<Fragment> </Fragment>``도 사용)
+``<div>``와 같은 특정 태그를 사용하고 싶지 않을 경우 ``<>`` ``</>``를 사용할 수 있다.(``<Fragment>`` ``</Fragment>``도 사용)
 ```javascript
 function Component(){
   return (
