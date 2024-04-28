@@ -11,6 +11,24 @@ SPA(Single Page Application)를 전제로 하는 라이브러리.
 
 DB 연동 등을 처리하기 위해서는 Controller 역할을 담당하는 서버가 필요하다.(Spring, Express 등)
 
+## React 동작 구조(원리)
+### Rendering
+브라우저는 html 코드를 다운로드하면 DOM(Document Object Model)을 생성하고 이를 화면에 출력한다. 이 작업을 Rendering이라고 한다.
+
+Javascript로 element를 제어하는 것은 실제로는 이 DOM을 제어하여 화면에 다시 Rendering되는 것을 의미한다.
+
+브라우저는 javascript에 의해 DOM이 변경되면 해당 Element의 변경 사항을 화면에 출력하기 위해 Reflow와 Repaint를 수행하게 된다.
+
+### Virtual DOM
+React는 DOM을 바로 제어하지 않고 Virtual DOM을 생성하여 변경 사항을 처리한다.
+
+변경 사항 처리를 위해 브라우저는 CSS를 다시 연산하고, 레이아웃을 구성하고(Reflow), 페이지를 다시 칠(Repaint)하게 되는데 시간이 많이 소요된다.
+
+React는 DOM에 바로 변경 사항을 처리하지 않고 복제본인 Virtual DOM에 먼저 반영하여 기존 DOM과 비교를 통해 변경할 부분을 최소화함으로써 소요 시간을 줄인다.
+
+![image](https://github.com/tiblo/React_edu/assets/34559256/2cf6fb96-0084-4b76-a1d3-6aa434c9e541)
+[출처 : https://velog.io/@leitmotif/React-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC](https://velog.io/@leitmotif/React-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+
 ## 개발환경 설정
 ### Node.js 설치
 https://nodejs.org/en
