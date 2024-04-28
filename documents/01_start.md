@@ -9,7 +9,7 @@ yarn 설치
 ```
 npm install --g yarn
 ```
-> Yam 사이트의 install 참조
+> Yarn 사이트의 install 참조
 
 ## 프로젝트 생성
 VSCode에 작업용 폴더를 열고 Terminal에 다음과 같이 입력한다.
