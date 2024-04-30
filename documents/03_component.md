@@ -46,6 +46,20 @@ function MyComponent {
 export default MyComponent;
 ```
 
+또는
+
+```javascript
+import React from 'react';
+ 
+const MyComponent = () => {
+  const name = '홍길동';
+
+  return <div className="react">{name}</div>;  
+}
+ 
+export default MyComponent;
+```
+
 #### Function Component의 장단점
 클래스형 컴포넌트에 비해 작성이 쉽지만 stat와 같은 내장 변수를 사용할 수 없다. 이 단점은 React 16.8 버전부터 React Hook이 도입되면서 함수에서도 state와, 라이프사이클 메소드도 사용할 수 있게 되면서 해결되었다.
 
