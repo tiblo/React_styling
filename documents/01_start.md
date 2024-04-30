@@ -26,5 +26,8 @@ cd project_name
 yarn start
 ```
 
+![image](https://github.com/tiblo/React_edu/assets/34559256/1515e326-2eaf-4037-a839-89faede62f8e)
+
+
 ## 프로젝트 종료
 Terminal에서 'ctrl + c'를 눌러 종료한다.
