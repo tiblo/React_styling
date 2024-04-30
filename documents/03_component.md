@@ -29,3 +29,25 @@ export default MyComponent;
 #### Class Component의 장단점
 클래스 내장 변수인 state를 생성하여 활용할 수 있으며, 라이프사이클의 각 단계에 해당하는 기능을 사용할 수 있고 임의 메서드를 정의하여 활용할 수 있다.
 
+반면 가독성이 함수형에 비해 떨어지며 작성이 어렵다.
+
+### Function Component
+함수형 컴포넌트는 첫글자를 대문자로 하여 javascript 함수 형태로 작성하는 방식이다.
+
+```javascript
+import React, { Component } from 'react';
+ 
+function MyComponent {
+  const name = '홍길동';
+
+  return <div className="react">{name}</div>;  
+}
+ 
+export default MyComponent;
+```
+
+#### Function Component의 장단점
+클래스형 컴포넌트에 비해 작성이 쉽지만 stat와 같은 내장 변수를 사용할 수 없다. 이 단점은 React 16.8 버전부터 React Hook이 도입되면서 함수에서도 state와, 라이프사이클 메소드도 사용할 수 있게 되면서 해결되었다.
+
+현재는 함수형 컴포넌트 작성 방식을 권장하고 있다.
+
