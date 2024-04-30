@@ -35,7 +35,7 @@ export default MyComponent;
 함수형 컴포넌트는 첫글자를 대문자로 하여 javascript 함수 형태로 작성하는 방식이다.
 
 ```javascript
-import React, { Component } from 'react';
+import React from 'react';
  
 function MyComponent {
   const name = '홍길동';
