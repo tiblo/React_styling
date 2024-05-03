@@ -31,3 +31,4 @@ yarn start
 
 ## 프로젝트 종료
 Terminal에서 'ctrl + c'를 눌러 종료한다.
+
