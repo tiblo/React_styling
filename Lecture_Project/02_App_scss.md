@@ -20,22 +20,16 @@ Scss는 Sass에서 지원하는 확장자 형식으로 두 가지는 동일한 �
 
 .sass
 ```css
-$font-stack: Helvetica, sans-serif
-$primary-color: #333
- 
 body
-  font: 100% $font-stack
-  color: $primary-color
+	background: yellow
+	color: blue
 ```
 
 .scss
 ```css
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
- 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
+	background: yellow;
+	color: blue;
 }
 ```
 (예제 출처 : 리액트를 다루는 기술[개정판])
