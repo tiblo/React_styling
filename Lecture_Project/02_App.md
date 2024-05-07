@@ -1,2 +1,2 @@
-# App css
+# App style 처리
 
