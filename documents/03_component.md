@@ -65,3 +65,18 @@ export default MyComponent;
 
 현재는 함수형 컴포넌트 작성 방식을 권장하고 있다.
 
+### 함수형 컴포넌트 작성법
+함수형 컴포넌트의 기본적인 형식은 다음과 같다.
+
+먼저 파일명과 동일하게 함수의 이름을 작성한다. 이 때 함수명 및 파일명의 첫글자를 ``대문자``로 작성한다.
+
+MyComponent.js
+```javascript
+import React from 'react';
+ 
+const MyComponent = () => {
+  return <div>...</div>;  
+}
+ 
+export default MyComponent;
+```
