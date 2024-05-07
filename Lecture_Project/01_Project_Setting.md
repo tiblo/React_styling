@@ -15,13 +15,13 @@
 
 ### 프로젝트 생성
 ```
-work> yarn create react-app board
+yarn create react-app board
 ```
 
 프로젝트 생성 후 폴더를 ``board``로 변경
 
 프로젝트 실행
 ```
-work> yarn start
+yarn start
 ```
 
