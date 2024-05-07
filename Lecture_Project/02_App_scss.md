@@ -13,7 +13,7 @@ Syntactically Awesome Style Sheets.
 
 ![image](https://github.com/tiblo/React_edu/assets/34559256/c0264c83-a2f9-40f3-a809-4d0496658e1c)
 
-출처 : https://nykim.work/97
+(이미지 출처 : https://nykim.work/97)
 
 ### Sass vs. Scss
 Scss는 Sass에서 지원하는 확장자 형식으로 두 가지는 동일한 전처리기이지만 작성 문법이 조금 다르다.
