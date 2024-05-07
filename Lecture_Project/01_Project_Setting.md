@@ -10,6 +10,18 @@
 - 다중 Class 명 처리 : classname
 - Form 유효성 처리 : react-hook-form
 
-## React Project
+## React Part
 > Project name : board
+
+### 프로젝트 생성
+```
+work> yarn create react-app board
+```
+
+프로젝트 생성 후 폴더를 ``board``로 변경
+
+프로젝트 실행
+```
+work> yarn start
+```
 
