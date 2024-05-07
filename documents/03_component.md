@@ -77,15 +77,23 @@ export default MyComponent;
 ### 함수형 컴포넌트 작성법
 함수형 컴포넌트의 기본적인 형식은 다음과 같다.
 
-먼저 파일명과 동일하게 함수의 이름을 작성한다. 이 때 함수명 및 파일명의 첫글자를 ``대문자``로 작성한다.
-
 MyComponent.js
 ```javascript
 import React from 'react';
  
-const MyComponent = () => {
-  return <div>...</div>;  
+const MyComponent = (prop) => {
+  return <div>나의 컴포넌트</div>;  
 }
  
 export default MyComponent;
 ```
+
+- 기본적으로 React를 import한다.
+- 파일명과 동일한 함수명으로 컴포넌트를 작성한다. 이 때 함수명 및 파일명의 첫글자를 ``대문자``로 작성한다.
+- function 키워드를 사용하여 작성하거나 화살표 함수(함수 표현식)로 작성할 수 있다.
+- 부모 컴포넌트로 부터 받는 prop가 있을 경우 함수의 인자로 작성한다.
+- useState, useEffect 등의 hook을 함수 내부 또는 외부의 필요한 위치에 작성한다.
+ - 마찬가지로 필요한 변수 또는 상수를 작성한다.
+- return 문에 jsx 문법으로 화면에 보여질 html 요소를 작성한다.
+- 마지막 문장으로 다른 파일에서 MyComponent 파일을 import해올 때 MyComponent로 불러올 수 있도록 export를 작성한다.
+
