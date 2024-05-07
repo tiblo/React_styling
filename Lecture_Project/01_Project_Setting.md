@@ -3,8 +3,8 @@
 - Front-end : React
 
 ## React Extension Package
-- Component 스타일링 : node-sass
 - Page 이동 : react-router-dom
+- Component 스타일링 : node-sass
 - REST 통신용 : axios
 - 날짜/시간 형식 지정 : moment
 - 다중 Class 명 처리 : classname
@@ -24,4 +24,17 @@ yarn create react-app board
 ```
 yarn start
 ```
+
+### 패키지 추가
+다음과 같이 패키지를 추가한다. 순서는 상관없다.
+```
+yarn add react-router-dom
+yarn add node-sass
+yarn add axios
+yarn add moment
+yarn add classname
+yarn add react-hook-form
+```
+
+
 
