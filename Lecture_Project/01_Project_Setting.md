@@ -42,12 +42,12 @@ yarn add @fortawesome/react-fontawesome@latest
 
 #### font awesome 아이콘 사용해 보기(https://fontawesome.com/icons)
 종류 : solid, regular, light, thin, duotone, brand
-1. 기본(core) 패키지 설치
-npm i @fortawesome/fontawesome-svg-core
-2. 아이콘 패키지 설치
-npm i @fortawesome/free-solid-svg-icons 
-npm i @fortawesome/free-regular-svg-icons
-...
-3. 리액트용 컴포넌트
-npm i @fortawesome/react-fontawesome@latest
+- 기본(core) 패키지 설치
+  - npm i @fortawesome/fontawesome-svg-core
+- 아이콘 패키지 설치
+  - npm i @fortawesome/free-solid-svg-icons 
+  - npm i @fortawesome/free-regular-svg-icons
+  - 기타
+- 리액트용 컴포넌트
+  - npm i @fortawesome/react-fontawesome@latest
 
