@@ -41,3 +41,5 @@ node_modules 폴더에는 리액트 프로젝트에 필요한 라이브러리들
 ```
 yarn install
 ```
+
+package.json 파일에 내용을 기반으로 node_modules을 다시 다운로드하기 때문에 package.json은 반드시 함께 백업해야 한다.
