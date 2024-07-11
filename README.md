@@ -86,6 +86,12 @@ https://velog.io/@chori/React-%EA%B0%9C%EB%B0%9C%EC%A4%91-vsCode-%EB%94%94%EB%B2
 * Auto Close Tag
 * Reactjs code snippets
   * rsc(React Stateless Component)로 함수형 컴포넌트 자동 생성
+* vscode-styled-components
+  * Styled component 안에서 css property 자동 완성 기능 제공
+* styled-components-snippets
+  * ``imsc`` : 	``import styled from 'styled-components';``
+  * ``sc`` : ``const ${1} = styled.${2}``
+  * ``scp`` : ``${props => props.${1}};``
 
 # React 프로젝트 복사 및 이동 후
 node_modules의 용량이 많기 때문에 제외하고 압축하여 옮기게 된다.
