@@ -97,3 +97,4 @@ export default MyComponent;
 - return 문에 jsx 문법으로 화면에 보여질 html 요소를 작성한다.
 - 마지막 문장으로 다른 파일에서 MyComponent 파일을 import해올 때 MyComponent로 불러올 수 있도록 export를 작성한다.
 
+## 컴포넌트 활용
