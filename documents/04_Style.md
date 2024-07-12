@@ -1,3 +1,36 @@
+# Components Styling
+컴포넌트 스타일링이란 HTML에서 엘리먼트를 CSS로 스타일을 적용하는 것처럼 리액트의 컴포넌트로 생성될 엘리먼트에 스타일을 적용하는 것이다.
+
+스타일링의 방식은 다음과 같다.
+- 일반적인 CSS 방식
+- CSS 전처리기 방식
+- CSS-In-JS 방식
+
+## 일반적인 CSS 방식
+HTML에서 사용하는 CSS를 그대로 적용하는 방식이다. 주로 HTML의 class 속성을 사용하며, 외부 CSS파일에 스타일을 작성하여 리액트 js에서 불러와서 사용한다.
+
+```javascript
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+	
+    </div>
+  );
+}
+```
+App.css 파일은 리액트 프로젝트를 생성하면 함께 생성된다.
+
+리액트의 ``className``은 HTML에서 class와 같다.
+
+```html
+<div class="App">
+
+</div>
+```
+위와 같이 처리된다.
+
 # SASS(SCSS)
 Syntactically Awesome Style Sheets.
 
