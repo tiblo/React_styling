@@ -22,6 +22,12 @@ function App() {
 ```
 App.css 파일은 리액트 프로젝트를 생성하면 함께 생성된다.
 
+```css
+.App {
+  text-align: center;
+}
+```
+
 리액트의 ``className``은 HTML에서 class와 같다.
 
 ```html
@@ -30,6 +36,8 @@ App.css 파일은 리액트 프로젝트를 생성하면 함께 생성된다.
 </div>
 ```
 위와 같이 처리된다.
+
+
 
 # SASS(SCSS)
 Syntactically Awesome Style Sheets.
