@@ -98,3 +98,19 @@ export default MyComponent;
 - 마지막 문장으로 다른 파일에서 MyComponent 파일을 import해올 때 MyComponent로 불러올 수 있도록 export를 작성한다.
 
 ## 컴포넌트 활용
+작성한 컴포넌트는 App.js나 다른 컴포넌트에서 활용할 수 있다.
+```javascript
+import './App.css';
+import MyComponet from './components/MyComponent';
+
+function App() {
+  return (
+    <div className="App">
+      <MyComponent />
+    </div>
+  );
+}
+
+export default App;
+```
+
