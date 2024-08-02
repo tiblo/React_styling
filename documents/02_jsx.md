@@ -122,6 +122,33 @@ function Component() {
 }
 ```
 
+### 조건부 렌더링
+특정 조건에 따라서 요소를 렌더링하기 위해서 ``&&``(AND) 연산자를 사용할 수 있다.
+```javascript
+function Component() {
+  //const item = null;
+  const item = "출력할 내용";
+
+  return (
+    <>
+      {item != null && <p>{item}</p>}
+    </>
+  );
+}
+```
+``item``이 null이면 아무것도 출력되지 않지만, 뭔가 값이 있으면 해당 내용을 담은 ``<p>`` 요소가 출력된다.
+
+비슷한 경우로 출력할 내용이 ``undefined``인 경우에 대한 처리는 다음과 같이 할 수 있다.
+```javascript
+function Component() {
+  //const name = undefined;
+  const name = "userId";
+
+  return <div>{name || 'Guest'}</div>;
+}
+```
+``name``이 ``undefined``인 경우 ``Guest``가 출력되며, ``name``에 값이 들어가 있으면 해당 값이 출력된다.
+
 ### 반복
 Jsx 내에서는 loop(for, while) 구문을 사용할 수 없다. 대신 map 함수를 사용하여 반복을 처리한다.
 ```javascript
