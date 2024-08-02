@@ -203,7 +203,7 @@ Jsx 문법에서 각 요소의 이벤트 처리 관련 코드를 작성하는 �
 
 ```javascript
 function Component() {
-  const eventFunc() {
+  function eventFunc() {
     alert("클릭함!");
   }
 
