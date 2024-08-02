@@ -114,3 +114,14 @@ function App() {
 export default App;
 ```
 
+## 컴포넌트로 데이터 전달
+
+
+
+
+
+
+
+
+
+
