@@ -9,6 +9,8 @@ React 문법으로 작성된 element는 가독성이 떨어지기 때문에 주�
 
 형태가 HTML과 유사하기 때문에 가독성이 높지만, 완전히 HTML과 동일하지는 않아서 몇가지 유의해야 할 부분이 있다.
 
+JSX는 결국 return 문 안에서 HTML 요소를 출력하기 위한 용도로 사용하는 문법이다.
+
 ## Jsx 문법과 React 문법 비교
 Jsx의 div element
 ```javascript
@@ -102,6 +104,8 @@ function Component() {
 }
 ```
 
+JSX 문법(즉, return문 안)에서 ``{``, ``}``로 감싸진 부분은 자바스크립트 코드를 사용하는 부분이다.
+
 ### 조건 연산자(``(condition)? A : B``)
 Jsx 내에서는 if, switch 구문을 사용할 수 없다. 대신에 조건 연산자를 사용하여 분기를 처리한다.
 ```javascript
@@ -131,7 +135,10 @@ function Component() {
 ```
 
 ### className
-Jsx에서는 element의 class 속성을 사용할 때 className을 사용한다. className은 HTML로 변환되면 class로 처리된다.
+Jsx에서는 element의 ``class`` 속성을 사용할 때 ``className``을 사용한다. ``className``은 HTML로 변환되면 ``class``로 처리된다.
+
+``className``은 react의 문법으로, 자바스크립트에서 ``class``가 예약어이기 때문에 충돌을 피하기 위해 react에서 변경한 것이다.
+
 ```javascript
 function Component() {
   return (
@@ -160,6 +167,20 @@ function Component() {
   );
 }
 ```
+위의 예제는 다음과 같이 작성할 수도 있다.
+```javascript
+function Component() {
+  return (
+    <>
+      <div style={{
+        backgroundColor: 'red',
+        color: 'white'
+      }}>Box</div>
+    </>
+  );
+}
+```
+style의 첫 번째 ``{``는 안의 내용이 자바스크립트 문장임을 나타내는 것이며, 두 번째 ``{``는 CSS 속성들을 자바스크립트 객체로 표현하기 위한 것이다.
 
 ### 주석
 Jsx 내에서 ``{/*…*/}`` 와 같은 형식을 사용.
@@ -173,3 +194,4 @@ function Component() {
   );
 }
 ```
+주석 또한 자바스크립트의 문법이기 때문에 ``{``와 ``}``를 앞뒤에 붙이는 것이다.
