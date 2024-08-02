@@ -115,10 +115,71 @@ export default App;
 ```
 
 ## 컴포넌트로 데이터 전달
+### props
+props(properties)는 부모 컴포넌트에서 자식 컴포넌트의 속성을 설정할 때 사용하는 요소이다.
+
+예를 들어,
+```html
+<input type="text" name="data">
+```
+html 요소에서 ``type``이나 ``name``과 같은 속성을 설정하여 사용한다.
+
+React에서 ``input`` 요소를 위한 컴포넌트를 만들었다고 한다면, 부모 컴포넌트에서 ``input`` 컴포넌트에 ``type`` 속성을 설정할 때 props를 사용하게 된다.
+
+```javascript
+const MyInput = (props) => {
+  return <input type={props.type} name={props.name} />
+}
+```
+부모 컴포넌트에서 ``MyInput``을 사용하면 다음과 같다.
+```javascript
+function App() {
+  return (
+    <MyInput type="text" name="data" />
+  );
+} 
+```
+
+부모 컴포넌트인 ``App``의 ``MyInput``에서 설정한 ``type`` 속성과 ``name`` 속성의 값은 ``props``로 묶여 ``MyInput`` 컴포넌트로 전달되고, ``MyInput``의 ``<input>`` 태그에서 ``props.type``과 ``props.name``으로 사용된다.
+
+props의 원래 목적은 자식 컴포넌트의 속성을 설정하는 것이지만, 이를 활용하여 부모 컴포넌트에서 자식 컴포넌트로 데이터를 보낼 때 사용할 수 있다.
+```javascript
+function App() {
+  return (
+    <MyComponet data="hello world" />
+  );
+}
+```
+```javascript
+const MyComponent = (props) => {
+  return <div>{props.data}</div>;
+};
+```
+
+### props.children
+부모 컴포넌트에서 자식 컴포넌트의 시작 태그와 종료 태그 사이에 작성하는 내용(content)은 ``porps.children``으로 전달할 수 있다.
+```javascript
+function App() {
+  return (
+    <MyComponet data="hello world">안녕하세요.</MyComponent>
+  );
+}
+```
+```javascript
+const MyComponent = (props) => {
+  return (
+    <>
+      <div>data : {props.data}</div>
+      <div>{props.children}</div>
+    </>
+  );
+};
+```
+
+### 비구조화 할당을 활용한 props 데이터 추출
 
 
-
-
+### props 기본값 설정(비구조화 할당 활용)
 
 
 
