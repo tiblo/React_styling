@@ -197,3 +197,55 @@ function Component() {
 }
 ```
 주석 또한 자바스크립트의 문법이기 때문에 ``{``와 ``}``를 앞뒤에 붙이는 것이다.
+
+### 이벤트 처리
+Jsx 문법에서 각 요소의 이벤트 처리 관련 코드를 작성하는 방법은 다음과 같다.
+
+```javascript
+function Component() {
+  const eventFunc() {
+    alert("클릭함!");
+  }
+
+  return (
+    <div>
+      <button onClick={eventFunc}>click</button>
+    </div>
+  );
+}
+```
+``onClick`` 속성에 함수명을 넣을 때 ``()``를 붙이지 않는다.
+
+``onClick`` 속성에 ``eventFunc()``를 넣게 되면 return이 처리될 때 함수가 호출되는 상황이 만들어 진다.
+
+즉, ``()``를 붙이게 되면 버튼이 클릭될 때 함수가 호출되는게 아니라 버튼이 화면에 그려질 때(렌더링 될 때) 함수가 호출되어 실행되고, 클릭할 때는 실행되지 않는다.
+
+따라서, 버튼이 화면에 그려질 때는 함수가 실행되지 않고 클릭할 때 ``eventFunc``함수가 사용될거라는 것을 나타내기 위해 ``()``를 빼고 작성한다.(함수와 버튼을 연결만 한다는 의미라고 보면 됨)
+
+위의 예제는 화살표 함수를 사용하여 다음과 같이 작성할 수 있다.
+
+```javascript
+function Component() {
+  const eventFunc = () => alert("클릭함!");
+  
+  return (
+    <div>
+      <button onClick={eventFunc}>click</button>
+    </div>
+  );
+}
+```
+또는 더 간단하게 다음과 같이 작성할 수 있다.
+```javascript
+function Component() {
+  return (
+    <div>
+      <button onClick={() => alert("클릭함!")}>click</button>
+    </div>
+  );
+}
+```
+
+
+
+
