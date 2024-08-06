@@ -43,3 +43,19 @@ yarn install
 ```
 
 package.json 파일에 내용을 기반으로 node_modules을 다시 다운로드하기 때문에 package.json은 반드시 함께 백업해야 한다.
+
+## Port 번호 변경
+React는 기본적으로 3000번 port 번호를 사용한다. Port 번호를 변경할 때는 ``package.json`` 파일에서 ``scripts``의 ``start`` 부분을 다음과 같이 수정해야 한다.
+
+```
+"scripts": {
+    "start": "set PORT=변경할번호 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
+``변경할번호`` 부분에 원하는 Port 번호를 입력하면 된다.
+
+
+
