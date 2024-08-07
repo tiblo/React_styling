@@ -178,6 +178,44 @@ Scss의 중첩을 사용하면 다음과 같이 작성할 수 있다.
 	}
 }
 ```
+``&``는 가상 선택자를 활용한 스타일 작성에도 활용한다.
+```css
+.box-div {
+	background-color: blue;
+
+	&:hover {
+		background-color: gray;
+	}
+}
+```
+그 외에도 다중 클래스 활용, 같은 스타일을 사용하는 요소와 요소 사이의 스타일 등에서도 활용한다.
+```css
+.box-div {
+	background-color: blue;
+	color: white;
+ 
+	&.w-10 {
+		width: 10%;
+	}
+	
+	& + & {
+		margin-top: 10px;
+	}
+};
+```
+```javascript
+function MyComponent( props ) {
+	return (
+		<div>
+			<div className="box-div">BOX1</div>
+			<div className="box-div w-10">BOX2</div>
+			<div className="box-div">BOX3</div>
+			<div className="other">BOX4</div>
+		</div>
+	);
+}
+```
+위 코드에서 ``BOX2`` div는 가로길이가 10%로 표현되며, class가 ``box-div``인 ``div``들 간 사이에 margin-top이 10씩 적용된다.(``BOX3``과 ``BOX4`` 사이에는 margin-top이 적용되지 않는다.
 
 ### Mixin
 Scss에서는 ``@mixin``을 사용하여 함수와 같은 형태의 스타일 블록을 정의하여 사용할 수 있다.
