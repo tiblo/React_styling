@@ -176,10 +176,23 @@ const MyComponent = (props) => {
 };
 ```
 
-### 비구조화 할당을 활용한 props 데이터 추출
+### Destructing을 활용한 props 데이터 추출
+여러 개의 property 값을 넘기는 경우 각 property 마다 ``props.``을 붙이는 것은 불편하다.
 
+이 부분은 ES6 문법의 Destructing을 활용하면 좀 더 편하게 할 수 있다.
+```javascript
+const MyComponent = (props) => {
 
-### props 기본값 설정(비구조화 할당 활용)
+  return (
+    <>
+      <div>data : {props.data}</div>
+      <div>{props.children}</div>
+    </>
+  );
+};
+```
+
+### props 기본값 설정
 
 
 
