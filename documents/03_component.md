@@ -182,19 +182,50 @@ const MyComponent = (props) => {
 이 부분은 ES6 문법의 Destructing을 활용하면 좀 더 편하게 할 수 있다.
 ```javascript
 const MyComponent = (props) => {
+  const { data, children } = props;
 
   return (
     <>
-      <div>data : {props.data}</div>
-      <div>{props.children}</div>
+      <div>data : {data}</div>
+      <div>{children}</div>
     </>
   );
 };
 ```
 
+Destructing은 매개변수 부분에서 처리하는 것도 가능하다.
+```javascript
+const MyComponent = ({ data, children }) => {
+  return (
+    <>
+      <div>data : {data}</div>
+      <div>{children}</div>
+    </>
+  );
+};
+```
+Property에 기본값을 설정하지 않는다면 위와 같은 방식이 좀더 유용하다.
+
 ### props 기본값 설정
+최신 React 문법에서 ``defaultProps``가 ``deprecated`` 됨으로써 props의 기본값을 설정하기 위해 ``Default parameters``를 사용한다.
 
+``props``의 Destructing을 수행하면서 기본값을 설정하는 방식이다.
+```javascript
+const MyComponent = (props) => {
+  const {
+    data = 'hi~',
+    children
+  } = props;
 
+  return (
+    <>
+      <div>data : {data}</div>
+      <div>{children}</div>
+    </>
+  );
+};
+```
+위와 같이 선택적으로 기본값을 설정하여 사용한다.
 
 
 
