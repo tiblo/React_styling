@@ -219,6 +219,9 @@ function MyComponent( props ) {
 ```
 위 코드에서 ``BOX2`` div는 가로길이가 10%로 표현되며, class가 ``box-div``인 ``div``들 간 사이에 margin-top이 10씩 적용된다.(``BOX3``과 ``BOX4`` 사이에는 margin-top이 적용되지 않는다.
 
+![image](https://github.com/user-attachments/assets/6db0ab11-35fe-46f6-bd9c-973aca6f6ac9)
+
+
 ### Mixin
 Scss에서는 ``@mixin``을 사용하여 함수와 같은 형태의 스타일 블록을 정의하여 사용할 수 있다.
 
