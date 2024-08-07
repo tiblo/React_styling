@@ -193,6 +193,8 @@ Scss의 중첩을 사용하면 다음과 같이 작성할 수 있다.
 .box-div {
 	background-color: blue;
 	color: white;
+	width: 500px;
+	height: 50px;
  
 	&.w-10 {
 		width: 10%;
