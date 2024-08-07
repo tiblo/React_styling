@@ -61,7 +61,7 @@ Syntactically Awesome Style Sheets.
 (이미지 출처 : https://nykim.work/97)
 
 ### Sass vs. Scss
-Scss는 Sass에서 지원하는 확장자 형식으로 두 가지는 동일한 전처리기이지만 작성 문법이 조금 다르다.
+Scss는 Sass에서 지원하는 확장자 형식으로 두 가지는 동일한 전처리기(같은 라이브러리)이지만 작성 문법이 조금 다르다.
 
 .sass
 ```css
@@ -82,3 +82,81 @@ body {
 위의 예제에서 보듯 scss가 css와 유사한 구조를 가지고 있기 때문에 일반 css의 경험이 있다면 조금 더 쓰기가 편하다.
 
 .sass 확장자는 중괄호({})와 세미콜론(;)을 사용하지 않고 작성하는 형식이다.
+
+여기에서는 css와 유사한 scss를 사용한다.
+
+## Sass 설치
+Scss를 사용한 하려면 scss로 작성한 내용을 css로 변환하기 위한 ``node-sass``라는 라이브러리가 필요하다.
+
+```
+> yarn add node-sass
+```
+
+## 문법
+Scss 문서를 작성하는 기본적인 문법은 일반 css(selector와 properties)와 동일하다. 
+
+### 변수
+Scss는 변수의 사용을 지원한다. 반복적으로 사용하는 값들(색상, 글꼴, 간격, 크기 등)을 변수에 저장하여 사용할 수 있다.
+
+변수를 정의할 때는 ``$`` 기호를 사용한다.
+
+```css
+$main-color: #0000ff;
+$sub-color: #00ffff;
+```
+``$`` ``변수명`` ``:`` ``설정값`` ``;`` 순으로 작성한다.
+
+변수를 사용할 때도 ``$`` 기호를 사용한다.
+```css
+body {
+	background-color: $main-color;
+}
+```
+
+### 중첩
+계층화 되어 있는 요소에 스타일을 적용할 때 활용하는 문법으로, 부모 요소의 스타일 영역에 자식 요소의 스타일을 정의하는 방식이다.
+
+```html
+<div class="grand-parent">
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+</div>
+```
+Html의 구조가 위와 같을 때 css로 스타일을 작성하면 다음과 같다.
+```css
+.grand-parent {
+	background: red;
+}
+.grand-parent>.parent {
+	background: green;
+}
+.grand-parent>.parent>.child {
+	background: blue;
+}
+```
+
+Scss의 중첩을 사용하면 다음과 같이 작성할 수 있다.
+```css
+.grand-parent {
+	background: red;
+
+	.parent {
+		background: green;
+
+		.child {
+			background: blue;
+		}
+	}
+}
+```
+요소의 계층 구조에 맞춰 스타일을 작성하여 직관적으로 파악할 수 있게 된다.
+### Mixin
+Scss에서는 ``@mixin``을 사용하여 함수와 같은 형태의 스타일 블록을 정의하여 사용할 수 있다.
+
+
+
+
+
+
+
