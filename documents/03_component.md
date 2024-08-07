@@ -227,6 +227,17 @@ const MyComponent = (props) => {
 ```
 위와 같이 선택적으로 기본값을 설정하여 사용한다.
 
+물론 매개변수 부분에서 처리하는 것도 가능하다.
+```javascript
+const MyComponent = ({ data = 'hi~', children }) => {
+  return (
+    <>
+      <div>data : {data}</div>
+      <div>{children}</div>
+    </>
+  );
+};
+```
 
 
 
