@@ -150,7 +150,35 @@ Scss의 중첩을 사용하면 다음과 같이 작성할 수 있다.
 	}
 }
 ```
-요소의 계층 구조에 맞춰 스타일을 작성하여 직관적으로 파악할 수 있게 된다.
+요소의 계층 구조에 맞춰 스타일을 작성하여 직관적으로 파악할 수 있게 된다. 또한 클래스명을 중복해서 작성하지 않아도 되는 편의성이 제공된다.
+
+### 부모 선택자 참조
+``&`` 선택자는 중첩 상태일 때 상위 선택자를 대체하는 기호이다. 
+
+```html
+<div class="content-grand-parent">
+	<div class="content-parent">
+		<div class="content-child"></div>
+	</div>
+</div>
+```
+위와 같이 클래스명이 지정되어 있을 경우 다음과 같이 ``&``를 사용하여 작성할 수 있다.
+```css
+.content {
+	&-grand-parent {	/* .content-grand-parent 가 된다. */
+		background: red;
+	
+		&-parent {
+			background: green;
+	
+			&-child {
+				background: blue;
+			}
+		}
+	}
+}
+```
+
 ### Mixin
 Scss에서는 ``@mixin``을 사용하여 함수와 같은 형태의 스타일 블록을 정의하여 사용할 수 있다.
 
