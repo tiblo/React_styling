@@ -43,8 +43,31 @@ CSS를 활용할 때는 일반적인 front-end 프로젝트처럼 모든 스타�
 
 전체적으로 통일성있는 사이트 디자인을 위한 공통의 CSS를 작성하고 개별적인 컴포넌트를 위한 스타일링을 따로 하는 방식이 주된 방식이다.
 
+## Inline Styling
+컴포넌트에 개별적인 Inline styling을 적용할 수 있다. 이때 css property들은 js 객체 형식으로 ``style`` 속성에 작성한다.
+```javascript
+const MyComponent = () => {
+	return (
+		<div style={{color: "red", backgroundColor: "black"}}>BOX</div>
+	);
+}
+```
+
+또는 스타일을 작성한 변수를 활용할 수 있다.
+```javascript
+const MyComponent = () => {
+	const divStyle = {color: "red", backgroundColor: "black"};
+
+	return (
+		<div style={divStyle}>BOX</div>
+	);
+}
+```
+
+Css property를 작성할 때는 kebab case를 camel case로 변환하면 된다.(font-size -> fontSize)
+
 # SASS(SCSS)
-Syntactically Awesome Style Sheets.
+Syntactically Awesome Style Sheets.(문법적으로 멋진 스타일시트)
 
 단순히 반복되는 내용을 줄이고 효율적으로 사용할 수 있도록 만든 CSS 전처리기 스타일시트 언어
 
@@ -210,7 +233,7 @@ Scss의 중첩을 사용하면 다음과 같이 작성할 수 있다.
 두 번째 ``&`` 대신 다른 컴포넌트의 선택자가 올 수 있으며, 예를 들어 ``& + p``이면 ``.box-div``와 ``<p>`` 컴포넌트가 연속적으로 작성되어 있을 때 스타일이 적용된다.
 
 ```javascript
-function MyComponent( props ) {
+const MyComponent = () => {
 	return (
 		<div>
 			<div className="box-div">BOX1</div>
