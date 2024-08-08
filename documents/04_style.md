@@ -66,6 +66,7 @@ const MyComponent = () => {
 
 Css property를 작성할 때는 kebab case를 camel case로 변환하면 된다.(font-size -> fontSize)
 
+
 # SASS(SCSS)
 Syntactically Awesome Style Sheets.(문법적으로 멋진 스타일시트)
 
@@ -79,7 +80,7 @@ Syntactically Awesome Style Sheets.(문법적으로 멋진 스타일시트)
 - Less
 - Stylus
 
-![image](https://github.com/tiblo/React_edu/assets/34559256/c8ccdf97-3be4-493f-955e-4d32e348ce3e)
+![image width:80%](https://github.com/tiblo/React_edu/assets/34559256/c8ccdf97-3be4-493f-955e-4d32e348ce3e)
 
 (이미지 출처 : https://nykim.work/97)
 
