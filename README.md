@@ -26,7 +26,8 @@ React는 DOM을 바로 제어하지 않고 Virtual DOM을 생성하여 변경 �
 
 React는 DOM에 바로 변경 사항을 처리하지 않고 복제본인 Virtual DOM에 먼저 반영하여 기존 DOM과 비교를 통해 변경할 부분을 최소화함으로써 소요 시간을 줄인다.
 
-![image](https://github.com/tiblo/React_edu/assets/34559256/2cf6fb96-0084-4b76-a1d3-6aa434c9e541)
+![image](https://github.com/user-attachments/assets/56c1b27e-7c1c-41cd-a503-8adf403421cd)
+
 [이미지출처 : React-동작-원리](https://velog.io/@leitmotif/React-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
 
 ## 개발환경 설정
@@ -105,7 +106,8 @@ node_modules의 용량이 많기 때문에 제외하고 압축하여 옮기게 �
 package.json의 내용을 확인하여 필요한 node_modules을 설치한다.
 
 # 터미널에 글자가 깨지는 경우 해결법
-![image](https://github.com/tiblo/React_edu/assets/34559256/b0da1558-e0ee-48b0-9c72-cf364cc963e1)
+![image](https://github.com/user-attachments/assets/571bd5a4-fd20-4a8b-bf98-4308c3ec4302)
+
 
 setting.json에 다음을 추가
 ```
@@ -128,12 +130,12 @@ chcp 65001
 
 > 이렇게 해도 다시 문자가 깨질 수도 있는데, 위의 코드를 다시 실행하거나 최종적으로는 registry를 편집해야 함.
 
-![image](https://github.com/tiblo/React_edu/assets/34559256/70bcf883-99e9-4850-bb55-acb5943073fd)
+![image](https://github.com/user-attachments/assets/48e933ce-4fe0-4a07-bb22-3af8a00eeb69)
 
 해결~
 
 ## settings.json 여는 방법
-![image](https://github.com/tiblo/React_edu/assets/34559256/8560465f-08b3-4e21-bd32-dd3a553dca2e)
+![image](https://github.com/user-attachments/assets/f50a2a32-13b8-492d-bf84-8ec373b81203)
 
 ``F1`` 누르고 위와 같이 타이핑하여 실행
 
