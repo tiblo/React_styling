@@ -80,7 +80,7 @@ Syntactically Awesome Style Sheets.(문법적으로 멋진 스타일시트)
 - Less
 - Stylus
 
-![image width:80%](https://github.com/tiblo/React_edu/assets/34559256/c8ccdf97-3be4-493f-955e-4d32e348ce3e)
+![image](https://github.com/tiblo/React_edu/assets/34559256/c8ccdf97-3be4-493f-955e-4d32e348ce3e)
 
 (이미지 출처 : https://nykim.work/97)
 
@@ -109,12 +109,42 @@ body {
 
 여기에서는 css와 유사한 scss를 사용한다.
 
-## Sass 설치
+## Sass 설치 및 활용
 Scss를 사용한 하려면 scss로 작성한 내용을 css로 변환하기 위한 ``node-sass``라는 라이브러리가 필요하다.
 
 ```
 > yarn add node-sass
 ```
+
+확장자가 ``.scss``인 파일을 생성하여 스타일시트를 작성한다.(components 폴더 하위에 css용 폴더를 생성하여 작성하는 것이 좋다.)
+
+예) components 폴더에 scss 폴더를 생성하고 ``mystyle.scss``파일을 생성한다.
+```css
+.mydiv {
+	width: 200px;
+	height: 50px;
+	border: 1px solid red;
+}
+```
+
+```javascript
+import React from "react";
+import "./scss/mystyle.scss";
+
+function MyComponet({ data, children }) {
+	return (
+		<div className="">
+			<div>data: {data}</div>
+			<div>{children}</div>
+		</div>
+	);
+}
+
+export default MyComponet;
+```
+
+![image](https://github.com/user-attachments/assets/08d6621a-7fde-4869-bb4c-8a99a843eb4a)
+
 
 ## 문법
 Scss 문서를 작성하는 기본적인 문법은 일반 css(selector와 properties)와 동일하다. 
