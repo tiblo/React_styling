@@ -133,7 +133,7 @@ import "./scss/mystyle.scss";
 
 function MyComponet({ data, children }) {
 	return (
-		<div className="">
+		<div className="mydiv">
 			<div>data: {data}</div>
 			<div>{children}</div>
 		</div>
@@ -148,6 +148,9 @@ export default MyComponet;
 
 ## 문법
 Scss 문서를 작성하는 기본적인 문법은 일반 css(selector와 properties)와 동일하다. 
+
+### 주석
+``//``를 사용하여 한줄 주석을 처리한다.
 
 ### 변수
 Scss는 변수의 사용을 지원한다. 반복적으로 사용하는 값들(색상, 글꼴, 간격, 크기 등)을 변수에 저장하여 사용할 수 있다.
