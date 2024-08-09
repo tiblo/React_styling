@@ -127,9 +127,38 @@ export default MyStyledComponet;
 ### 전역 스타일링
 Styled-components는 사이트의 모든 컴포넌트에서 공통으로 적용할 스타일을 정의할 수 있는 ``createGlobalStyle``함수를 제공한다.
 
+전역 스타일용 styled-components를 하나의 파일로 작성하여 다른 컴포넌트에서 import하여 사용할 수 있다.
 
+먼저 createGlobalStyle을 import 한 후 모든 사이트에 적용될 css 속성을 작성한다.
 
+```javascript
+import { createGlobalStyle } from "styled-components";
 
+const MainStyle = createGlobalStyle`
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  ...
+`;
+
+export default MainStyle;
+```
+
+App.js에 작성한 전역 스타일 컴포넌트를 최상위 컴포넌트로 추가한다.
+```javascript
+import MainStyle from './MainStyle';
+...
+
+function App() {
+  return (
+    <div className="App">
+      <MainStyle />
+      ...
+    </div>
+  );
+}
+```
 
 
 
